@@ -1,0 +1,204 @@
+@charset "UTF-8";
+
+/* @font-face {
+    font-family: '런드리고딕 Regular';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2403-2@1.0/TTLaundryGothicB.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+	} */
+@import url(https://fonts.googleapis.com/css?family=Chewy);
+
+.title{
+    /* font-family: '런드리고딕 Regular'; */
+	color: white;
+    font-family: "Chewy";
+	font-size: 5em;
+    text-align: center;
+	text-shadow: 5px 5px #000;
+	margin-top: 50px;
+}
+.title span{
+	text-shadow: 5px 5px orange;
+}
+/* *{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+} */
+body {
+	width: 100%;
+	min-height: 100vh;
+/* 	display: flex;
+	justify-content: center;
+	align-items: center; */
+	background-color: #333; 
+}
+
+.ghost {
+	animation: moveUpDown 3s infinite;
+	position: absolute;
+	margin-left: 20px;
+}
+
+@keyframes moveUpDown {
+	0%{
+		margin-top: 0px;
+	}
+	50%{
+		margin-top: -20px;
+	}
+	100%{
+		margin-top: 0px;
+	}
+}
+
+.ghost .body{
+	width: 80px;
+	height: 100px;
+	background-color: #fff;
+	border-top-left-radius: 45%;
+	border-top-right-radius: 45%;
+	position: relative;
+}
+
+.ghost .body .face{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	width: 50px;
+	position: absolute;
+	top: 30px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.ghost .body .face .eye {
+	width: 14px;
+	height: 14px;
+	border-radius: 50%;
+	background-color: #333;
+}
+
+.ghost .body .face .mouse{
+	width: 33px;
+	height: 15px;
+	background-color: #333;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	margin-left: 8px;
+	margin-top: 8px;
+}
+
+.ghost .bottom{
+	display: flex;
+}
+
+.ghost .bottom .leg{
+	background-color: #fff;
+	width: 16px;
+	height: 15px;
+	border-bottom-left-radius: 30px;
+	border-bottom-right-radius: 30px;
+}
+
+.ghost .bottom .leg:nth-child(2n){
+	position: relative;
+	top: -6px;
+	background-color: #333;
+	border-radius: 50%;
+}
+
+.blood{
+	display: flex;
+}
+
+.blood .flow{
+	background-color: red;
+	width: 16px;
+	height: 15px;
+	border-bottom-left-radius: 30px;
+	border-bottom-right-radius: 30px;
+}
+
+.blood .flow .leg:nth-child(2n){
+	position: relative;
+	top: -6px;
+	background-color: #333;
+	border-radius: 50%;
+}
+
+/* footer */
+footer{
+	font-family: "Chewy";
+	color: white;
+    border-top: 1px solid rgb(165, 165, 165);
+}
+footer>.inner{
+    height: 320px;
+}
+footer>.inner>ul{
+    display: flex;
+    justify-content: flex-start;
+    margin: 50px 0px;
+    border-bottom: 1px solid rgb(165, 165, 165);
+}
+footer>.inner>ul>li{
+    padding: 10px 20px 30px 0px;
+}
+.red{
+    color: red;
+}
+footer>.inner>.footerBt{
+    display: flex;
+    justify-content: space-between;
+	margin-left: 20px;
+}
+footer>.inner>.footerBt>.footLeft>.t{
+    margin: 10px 0px;
+}
+footer>.inner>.footerBt>.footLeft>.t>.before{
+    padding-left: 10px;
+}
+footer>.inner>.footerBt>.footLeft>.t>.before::before{
+    content: " ";
+    background-color: #858585;
+    width: 1px;
+    height: 13px;
+    position: absolute;
+    top: 40%;
+    left: 0;
+}
+footer>.inner>.footerBt>.footLeft>.t>span{
+    padding: 10px 10px 10px 0px;
+    position: relative;
+}
+footer>.inner>.footerBt>.footLeft>.c{
+    font-size: small;
+    padding-top: 30px;
+}
+footer>.inner>.footerBt>.footRight>select{
+    width: 210px;
+    height: 45px;
+    padding-left: 20px;
+    border: 1px solid rgb(186, 185, 185);
+    appearance: none;
+    background-image: url(img/sel_icon.png);
+    background-repeat: no-repeat;
+    background-position: 90% 50%;
+}
+main{
+    position: relative;
+}
+main>.top{
+    background-image: url(img/top_btn.png);
+    background-repeat: no-repeat;
+    background-position: 90% 100%;
+    width: 100px;
+    height: 50px;
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    right: 30px;
+}

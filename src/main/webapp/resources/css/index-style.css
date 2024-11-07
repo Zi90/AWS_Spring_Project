@@ -1,0 +1,53 @@
+@import url(https://fonts.googleapis.com/css?family=Chewy);
+
+body {
+	/* display: flex;
+	align-items: center;
+	justify-content: center; */
+	height: 100vh;
+	margin: 0;
+	background-color: antiquewhite;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.button-container {
+	position: relative;
+}
+
+button:hover {
+	text-shadow: 5px 5px orange;
+}
+
+button#trick-button {
+	color: white;
+	background: none;
+	margin-right: 0.25em;
+    font-family: "Chewy";
+	font-size: 5em;
+	cursor: pointer;
+	border: none;
+	border-radius: 10px;
+	transition: text-shadow 1s ease;
+}
+
+button#treat-button {
+    color: white;
+	background: none;
+	margin-left: 0.25em;
+    font-family: "Chewy";
+	font-size: 5em;
+	cursor: pointer;
+	border: none;
+	border-radius: 10px;
+	transition: text-shadow 1s ease;
+}
+
+p {
+	font-size: 5em;
+	font-family: "Chewy";
+}
