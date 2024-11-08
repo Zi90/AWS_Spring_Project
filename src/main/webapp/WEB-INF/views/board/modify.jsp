@@ -1,10 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<jsp:include page="../layout/header.jsp"/>
 <body>
 <div class="container-md">
-	<h1>Board Modify Page...</h1>
+<jsp:include page="../layout/header.jsp"/>
 	<c:set value= "${bdto.bvo}" var="bvo"></c:set>
 	<form action="/board/update" method="post" enctype="multipart/form-data">
 	<div class="mb-3">
@@ -31,7 +30,7 @@
 	<div class="mb-3">
 	  <label for="file" class="form-label"></label>
 	  <input type="file" class="form-control" id="file" name="files" multiple="multiple" style="display:none;">
-	  <button type="button" class="btn btn-info" id="trigger">FileUpload...</button>
+	  <button type="button" class="login-btn" id="trigger"><span>FileUpload</span></button>
 	</div>
 	<!-- 첨부파일 표시 라인 추가 -->
 	<div class="mb-3" id="fileZone">
@@ -67,8 +66,8 @@
 				</c:forEach>
 			</ul>
 		</div>
-		<button type="submit" class="btn btn-success" id="regBtn">modify</button>
-		<a href="/board/list"><button type="button" class="btn btn-danger">list</button></a>
+			<button type="submit" class="login-btn" id="regBtn"><span>Modify</span></button>
+			<a href="/board/list"><button type="button" class="login-btn"><span>Cancle</span></button></a>
 	</form>
 	<script type="text/javascript" src="/resources/js/boardModify.js"></script>
 	<script type="text/javascript" src="/resources/js/boardRegister.js"></script>

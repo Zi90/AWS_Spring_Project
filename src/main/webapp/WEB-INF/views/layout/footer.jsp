@@ -5,8 +5,8 @@
         <div class="inner">
             <!-- footer -->
                  <ul>
-                    <li><a href="">롯데월드 소개</a></li>
-                    <li><a href="">기업 제휴 및 입점 문의</a></li>
+                    <li><a href="">할로윈 게시판 소개</a></li>
+                    <li><a href="">기업 제휴 및 광고 문의</a></li>
                     <li><a href="">이용약관</a></li>
                     <li><a href="" class="red">개인정보처리방침</a></li>
                     <li><a href="">사이트맵</a></li>
@@ -14,15 +14,15 @@
                  <div class="footerBt">
                     <div class="footLeft">
                         <div class="t">
-                            <span>서울특별시 송파구 올림픽로 240 호텔롯데 롯데월드</span>
-                            <span class="before">대표자 : 최홍훈</span>
+                            <span>인천광역시 남동구 인주대로 593 엔타스빌딩 12층</span>
+                            <span class="before">대표자 : 오미란</span>
                         </div>
                         <div class="t">
-                            <span>사업자등록번호 : 219-85-00014</span>
-                            <span class="before">통신판매업신고번호 : 송파 제5513호</span>
-                            <span class="before">전화 : 1661-2000</span>
+                            <span>사업자등록번호 : 219-85-XXXXX</span>
+                            <span class="before">통신판매업신고번호 : 송파 제XXXX호</span>
+                            <span class="before">전화 : 032-719-4074</span>
                         </div>
-                        <div class="c">COPYRIGHT 2018 LOTTEWORLD. ALL RIGHTS RESERVED.</div>
+                        <div class="c">COPYRIGHT 2018 EZEN ACADEMY. ALL RIGHTS RESERVED.</div>
                     </div>
              </div>
         </div>

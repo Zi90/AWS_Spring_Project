@@ -1,25 +1,36 @@
 @charset "UTF-8";
 
-/* @font-face {
-    font-family: '런드리고딕 Regular';
-    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2403-2@1.0/TTLaundryGothicB.woff2') format('woff2');
-    font-weight: 700;
-    font-style: normal;
-	} */
 @import url(https://fonts.googleapis.com/css?family=Chewy);
 
 .title{
-    /* font-family: '런드리고딕 Regular'; */
 	color: white;
     font-family: "Chewy";
 	font-size: 5em;
     text-align: center;
 	text-shadow: 5px 5px #000;
 	margin-top: 50px;
+	position: relative; /* 부모 요소의 기준을 설정 */
 }
 .title span{
 	text-shadow: 5px 5px orange;
 }
+.witch-image {
+    position: absolute;  /* 절대 위치로 설정 */
+    top: -20px;              /* 상단에 배치 */
+    right: 335px;            /* 오른쪽에 배치 */
+    width: 70px;         /* 이미지 크기 */
+}
+.headerBox{
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+}
+
+.header > li > a{
+	font-family: "Chewy";
+	font-size: 30px;
+	font-weight: 700;
+}
+
 /* *{
 	margin: 0;
 	padding: 0;
@@ -38,6 +49,7 @@ body {
 	animation: moveUpDown 3s infinite;
 	position: absolute;
 	margin-left: 20px;
+	z-index: 1000;
 }
 
 @keyframes moveUpDown {
@@ -116,36 +128,137 @@ body {
 
 .blood .flow{
 	background-color: red;
-	width: 16px;
-	height: 15px;
-	border-bottom-left-radius: 30px;
-	border-bottom-right-radius: 30px;
+	width: 50px;
+	height: 80px;
+	border-bottom-left-radius: 45%;
+	border-bottom-right-radius: 30%;
 }
 
-.blood .flow .leg:nth-child(2n){
-	position: relative;
-	top: -6px;
+.blood .flow:nth-child(2n){
 	background-color: #333;
-	border-radius: 50%;
+}
+
+.blood .flow:nth-child(3n){
+	background-color: red;
+	width: 60px;
+	height: 50px;
+	border-bottom-left-radius: 40%;
+	border-bottom-right-radius: 50%;
+}
+
+.blood .flow:nth-child(5n){
+	background-color: red;
+	width: 60px;
+	height: 100px;
+	border-bottom-left-radius: 30px;
+	border-bottom-right-radius: 60%;
+}
+
+/* main */
+label{
+	color: white;
+    font-family: "Chewy";
+	font-size: 3em;
+    text-align: center;
+	text-shadow: 5px 5px #000;
+}
+
+.pumpkin{
+	margin-top: 50px;
+}
+
+.userFont{
+	font-family: "Chewy";
+	font-size: 18px;
+}
+
+.userBtn{
+	margin-top: 20px;
+}
+
+.icon{
+	margin-bottom: 20px;
+}
+
+.login-btn {
+	font-family: "Chewy";
+	border: none;
+	display: block;
+	text-align: center;
+	cursor: pointer;
+	text-transform: uppercase;
+	outline: none;
+	overflow: hidden;
+	position: relative;
+	color: #fff;
+	font-weight: 700;
+	font-size: 30px;
+	background-color: #222;
+	padding: 17px 60px;
+	margin: 20px auto;
+	box-shadow: 0 5px 15px rgba(0,0,0,0.20);
+  }
+  
+  .login-btn span {
+	position: relative; 
+	z-index: 1;
+	text-decoration: none;
+  }
+  
+  .login-btn:after {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 490%;
+	width: 140%;
+	background: #d27b78;
+	-webkit-transition: all .5s ease-in-out;
+	transition: all .5s ease-in-out;
+	-webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
+	transform: translateX(-98%) translateY(-25%) rotate(45deg);
+  }
+  
+  .login-btn:hover:after {
+	-webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
+	transform: translateX(-9%) translateY(-25%) rotate(45deg);
+  }
+
+.list-design{
+	font-family: '런드리고딕 Regular';
 }
 
 /* footer */
+@font-face {
+    font-family: '런드리고딕 Regular';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2403-2@1.0/TTLaundryGothicB.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+	}
+
 footer{
-	font-family: "Chewy";
+	font-family: '런드리고딕 Regular';
 	color: white;
     border-top: 1px solid rgb(165, 165, 165);
+	margin-top: 200;
 }
 footer>.inner{
-    height: 320px;
+	height: 320px;
 }
 footer>.inner>ul{
-    display: flex;
+	display: flex;
     justify-content: flex-start;
     margin: 50px 0px;
     border-bottom: 1px solid rgb(165, 165, 165);
 }
 footer>.inner>ul>li{
-    padding: 10px 20px 30px 0px;
+	padding: 10px 20px 30px 0px;
+	font-family: "Chewy";
+}
+footer>.inner>ul>li>a{
+	font-family: '런드리고딕 Regular';
+	color: white;
+	text-decoration-line: none;
 }
 .red{
     color: red;

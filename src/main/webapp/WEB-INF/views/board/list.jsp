@@ -6,10 +6,8 @@
 
 <div class="container-md">
 <jsp:include page="../layout/header.jsp"/>
-<h1>Board List Page...</h1>
-<hr>
 <!-- search line -->
-<div class="container-fluid">
+<div class="container-fluid list-design">
  	<form action="/board/list" method="get" class="d-flex" role="search">
  	<select class="form-select" name="type" id="inputGroupSelect01">
 	    <option ${ph.pgvo.type == null ? 'selected' : '' }>Choose...</option>
@@ -34,10 +32,10 @@
      <%-- ${ph } --%>
 </div>
 
-<table class="table table-hover">
+<table class="table table-hover list-design">
  <thead>
     <tr>
-      <th scope="col">#</th>
+      <th scope="col">no</th>
       <th scope="col">title</th>
       <th scope="col">writer</th>
       <th scope="col">regDate</th>
@@ -89,8 +87,6 @@
     </li>
   </ul>
 </nav>
-
-<a href="/"><button type="submit" class="btn btn-success">list</button></a>
 
 </div>
 <jsp:include page="../layout/footer.jsp"/>
