@@ -18,7 +18,7 @@
 		  <label for="n" class="form-label">nickName</label>
 		  <input type="text" class="form-control" id="n" name="nickName" placeholder="nickName...">
 		</div>
-		<button type="submit" class="login-btn"><span>Join</span></button>
+		<button type="submit" class="login-btn-2"><span>Join</span></button>
 	</form>
 </div>
 
