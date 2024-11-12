@@ -1,0 +1,42 @@
+create table board(
+bno bigint auto_increment,
+title varchar(500) not null,
+writer varchar(500) not null,
+content text,
+is_del varchar(5) default 'N',
+reg_date datetime default now(),
+read_count int default 0,
+primary key(bno));
+
+create table comment(
+cno bigint auto_increment,
+bno bigint,
+writer varchar(500) not null,
+content text,
+reg_date datetime default now(),
+primary key(cno));
+
+create table file (
+uuid varchar(256) not null,
+save_dir varchar(256) not null,
+file_name varchar(256) not null,
+file_type tinyint(1) default 0,
+bno bigint,
+file_size bigint,
+reg_date datetime default now(),
+primary key(uuid));
+
+create table user(
+email varchar(256),
+pwd varchar(256),
+nickName varchar(256),
+reg_date datetime default now(),
+lastLogin datetime default now(),
+primary key(email));
+
+create table auth(
+id bigint auto_increment,
+email varchar(256) not null,
+auth varchar(256) not null,
+primary key(id),
+foreign key(email) references user(email));
